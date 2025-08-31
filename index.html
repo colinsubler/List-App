@@ -110,7 +110,7 @@
       
       if (clickedLi) {
         const itemID = +clickedLi.dataset.id;
-        const item = items.find(i => i.id === id);
+        const item = items.find(i => i.id === itemID);
         if (item) {
           item.done = !item.done;
           render();
