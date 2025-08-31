@@ -108,8 +108,8 @@
       // - flip item.done (true/false), then call render()
       const li = e.target.closest("li");
       
-      if (clickedLi) {
-        const itemID = +clickedLi.dataset.id;
+      if (li) {
+        const itemID = +li.dataset.id;
         const item = items.find(i => i.id === id);
         if (item) {
           item.done = !item.done;
