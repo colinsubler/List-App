@@ -109,7 +109,7 @@
       const li = e.target.closest("li");
       
       if (clickedLi) {
-        const id = parseInt(li.dataset.id);
+        const itemID = +clickedLi.dataset.id;
         const item = items.find(i => i.id === id);
         if (item) {
           item.done = !item.done;
